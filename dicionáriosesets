@@ -1,0 +1,19 @@
+informacoes_usuario = {
+    'Nome': '',
+    'telefone': '',
+    'email': ''
+}
+
+nome = input("Olá, Digite seu NOME:  ")
+informacoes_usuario['Nome']= nome
+
+telefone = input("Agora Digite seu TELEFONE:  ")
+informacoes_usuario['telefone']= telefone
+
+email = input("Para finalizar, Digite o seu EMAIL:  ")
+informacoes_usuario['email']= email
+
+print("\nInformações do contato:")
+
+for chave, valor in informacoes_usuario.items():
+    print(f"{chave} : {valor}")
